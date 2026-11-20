@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Pet Owner Registry</string>
+    <string name="sign_in_title">Pet Owner Registry</string>
+    <string name="sign_in_subtitle">Register pet owners, organize companion profiles, and keep every record securely synced in the cloud.</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_confirm_title">Sign out?</string>
+    <string name="sign_out_confirm_message">You will be signed out of your Google account on this device.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="register_owner">Register Owner</string>
+    <string name="new_registration_title">Register Pet Owner</string>
+    <string name="edit_registration_title">Edit Registration</string>
+    <string name="registration_details_title">Registration Details</string>
+    <string name="search_placeholder">Search owner, pet, breed, or phone</string>
+    <string name="empty_registry_title">No Registered Pet Owners Yet</string>
+    <string name="empty_registry_subtitle">Tap below to add your first pet owner and companion pet profile to Cloud Firestore.</string>
+    <string name="register_first_owner">Register First Owner</string>
+    <string name="delete_confirm_title">Delete Registration?</string>
+    <string name="delete_confirm_message">This will permanently remove this pet owner and pet record from the registry.</string>
+    <string name="owner_details_section">Owner Information</string>
+    <string name="pet_details_section">Pet Information</string>
+    <string name="save_registration">Save Registration</string>
+    <string name="update_registration">Update Registration</string>
+    <string name="load_sample_data">Load Sample Data</string>
+</resources>

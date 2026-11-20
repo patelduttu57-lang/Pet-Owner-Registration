@@ -1,0 +1,77 @@
+{
+  "entities": {
+    "PetOwnerRegistration": {
+      "title": "PetOwnerRegistration",
+      "description": "A registered pet owner and their companion pet record.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the user managing this registration."
+        },
+        "fullName": {
+          "type": "string",
+          "description": "Full legal name of the pet owner (2-100 characters)."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email address of the pet owner (3-120 characters)."
+        },
+        "mobileNumber": {
+          "type": "string",
+          "description": "Mobile contact number of the pet owner (5-30 characters)."
+        },
+        "residentialAddress": {
+          "type": "string",
+          "description": "Residential street address of the pet owner (3-250 characters)."
+        },
+        "petName": {
+          "type": "string",
+          "description": "Name of the registered pet (1-80 characters)."
+        },
+        "petType": {
+          "type": "string",
+          "description": "Species or category of the pet (e.g., Dog, Cat, Bird, Rabbit, Fish, Reptile, Other)."
+        },
+        "petBreed": {
+          "type": "string",
+          "description": "Breed or variety of the pet (1-80 characters)."
+        },
+        "petAge": {
+          "type": "string",
+          "description": "Age of the pet with unit (e.g., '3 years', '6 months', 1-40 characters)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the registration was created (FieldValue.serverTimestamp())."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the registration was last updated (FieldValue.serverTimestamp())."
+        }
+      },
+      "required": [
+        "userId",
+        "fullName",
+        "email",
+        "mobileNumber",
+        "residentialAddress",
+        "petName",
+        "petType",
+        "petBreed",
+        "petAge",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/pet_owners/{registrationId}": {
+      "schema": "PetOwnerRegistration",
+      "description": "Per-user isolated collection of registered pet owners and their pet profiles."
+    }
+  }
+}
